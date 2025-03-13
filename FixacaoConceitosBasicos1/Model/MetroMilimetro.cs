@@ -11,11 +11,11 @@ namespace FixacaoConceitosBasicos1.Model
 
         namespace Model
     {
-        public class SomaDoisNumeros
+        public static class MetrosMilimetros
         {
-            public static int Somar(int numero1, int numero2)
+            public static double Converter(double metros)
             {
-                return numero1 + numero2;
+                return metros * 1000;
             }
         }
         }

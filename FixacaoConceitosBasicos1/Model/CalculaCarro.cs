@@ -9,22 +9,23 @@ namespace FixacaoConceitosBasicos1.Model
     internal class CalculaCarro
     {
     }
-namespace Model
+    namespace Model
     {
         public class CalculaAluguelCarro
         {
-           
+
             public static double Calcular(int dias, int quilometragemInicial, int quilometragemFinal)
             {
                 double diaria = 95.00;
                 double valorPorKm = 0.35;
 
-                
+
                 int kmPercorridos = quilometragemFinal - quilometragemInicial;
 
-                
+
                 double valorTotal = (diaria * dias) + (valorPorKm * kmPercorridos);
                 return valorTotal;
             }
         }
     }
+};
